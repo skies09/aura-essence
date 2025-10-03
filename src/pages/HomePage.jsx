@@ -2,6 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { candleProducts } from '../data/mockData';
 
+// Utility function to scroll to top
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
 const HomePage = () => {
   const featuredProducts = candleProducts.filter(product => product.featured);
 
@@ -18,11 +26,11 @@ const HomePage = () => {
               Illuminate your space with our handcrafted premium candles. 
               Each candle is carefully crafted to create the perfect ambiance for every moment.
             </p>
-            <div className="space-x-4">
-              <Link to="/products" className="btn-primary text-lg px-8 py-3">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Link to="/products" className="btn-primary text-lg px-8 py-3 w-full sm:w-auto text-center">
                 Shop Now
               </Link>
-              <Link to="/products" className="btn-secondary text-lg px-8 py-3">
+              <Link to="/products" className="btn-secondary text-lg px-8 py-3 w-full sm:w-auto text-center">
                 View Collection
               </Link>
             </div>
@@ -105,6 +113,7 @@ const HomePage = () => {
                 <Link 
                   to={`/products/${product.id}`}
                   className="btn-primary w-full"
+                  onClick={scrollToTop}
                 >
                   View Details
                 </Link>
@@ -113,7 +122,7 @@ const HomePage = () => {
           </div>
           
           <div className="text-center mt-12">
-            <Link to="/products" className="btn-primary text-lg px-8 py-3">
+            <Link to="/products" className="btn-primary text-lg px-8 py-3" onClick={scrollToTop}>
               View All Products
             </Link>
           </div>

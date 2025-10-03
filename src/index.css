@@ -17,15 +17,25 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #c3765b;
   color: white;
   font-weight: 600;
-  padding: 0.5rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   transition: all 0.2s;
   border: none;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  min-height: 44px; /* Better touch target for mobile */
+  line-height: 1.2;
 }
 
 .btn-primary:hover {
   background-color: #4d3a33;
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
 }
 
 .btn-secondary {
@@ -33,17 +43,34 @@ h1, h2, h3, h4, h5, h6 {
   color: #4d3a33;
   border: 2px solid #4d3a33;
   font-weight: 600;
-  padding: 0.5rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   transition: all 0.2s;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
   text-align: center;
+  min-height: 44px; /* Better touch target for mobile */
+  line-height: 1.2;
 }
 
 .btn-secondary:hover {
   background-color: #e6dad2;
+  transform: translateY(-1px);
+}
+
+.btn-secondary:active {
+  transform: translateY(0);
+}
+
+/* Mobile-specific button improvements */
+@media (max-width: 640px) {
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+    min-height: 48px;
+  }
 }
 
 .card {

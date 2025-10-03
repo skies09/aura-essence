@@ -3,6 +3,14 @@ import { Link } from 'react-router-dom';
 import { candleProducts, categories } from '../data/mockData';
 import { useCart } from '../context/CartContext';
 
+// Utility function to scroll to top
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
 
 const ProductsPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -113,6 +121,7 @@ const ProductsPage = () => {
               <Link 
                 to={`/products/${product.id}`}
                 className="btn-secondary w-full text-sm flex items-center justify-center space-x-2"
+                onClick={scrollToTop}
               >
                 <i className="fas fa-eye"></i>
                 <span>View Details</span>

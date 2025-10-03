@@ -1,0 +1,143 @@
+export const candleProducts = [
+  {
+    id: 1,
+    name: "Lavender Dreams",
+    price: 19.99,
+    description: "A soothing blend of lavender and vanilla that creates a peaceful atmosphere perfect for relaxation and sleep.",
+    image: "/images/images.jpeg",
+    category: "Relaxation",
+    scent: "Lavender & Vanilla",
+    burnTime: "40-50 hours",
+    size: "8oz",
+    inStock: true,
+    featured: true
+  },
+  {
+    id: 2,
+    name: "Ocean Breeze",
+    price: 24.99,
+    description: "Fresh sea salt and ocean air combine to bring the calming essence of the coast into your home.",
+    image: "/images/images.jpeg",
+    category: "Fresh",
+    scent: "Sea Salt & Ocean Air",
+    burnTime: "45-55 hours",
+    size: "10oz",
+    inStock: true,
+    featured: true
+  },
+  {
+    id: 3,
+    name: "Warm Cinnamon",
+    price: 18.99,
+    description: "The cozy scent of cinnamon and warm spices that evokes memories of holiday gatherings and comfort.",
+    image: "/images/images.jpeg",
+    category: "Spicy",
+    scent: "Cinnamon & Spices",
+    burnTime: "35-45 hours",
+    size: "6oz",
+    inStock: true,
+    featured: false
+  },
+  {
+    id: 4,
+    name: "Rose Garden",
+    price: 28.99,
+    description: "Delicate rose petals and fresh garden herbs create an elegant and romantic atmosphere.",
+    image: "/images/images.jpeg",
+    category: "Floral",
+    scent: "Rose & Garden Herbs",
+    burnTime: "50-60 hours",
+    size: "12oz",
+    inStock: true,
+    featured: true
+  },
+  {
+    id: 5,
+    name: "Citrus Burst",
+    price: 16.99,
+    description: "Energizing blend of lemon, orange, and grapefruit that uplifts your mood and invigorates your space.",
+    image: "/images/images.jpeg",
+    category: "Citrus",
+    scent: "Lemon, Orange & Grapefruit",
+    burnTime: "30-40 hours",
+    size: "6oz",
+    inStock: true,
+    featured: false
+  },
+  {
+    id: 6,
+    name: "Vanilla Bean",
+    price: 22.99,
+    description: "Rich, creamy vanilla with hints of caramel creates a warm and inviting atmosphere.",
+    image: "/images/images.jpeg",
+    category: "Sweet",
+    scent: "Vanilla & Caramel",
+    burnTime: "40-50 hours",
+    size: "8oz",
+    inStock: true,
+    featured: false
+  },
+  {
+    id: 7,
+    name: "Eucalyptus Mint",
+    price: 24.99,
+    description: "Refreshing eucalyptus and cool mint combine for a spa-like experience that clears the mind.",
+    image: "/images/images.jpeg",
+    category: "Fresh",
+    scent: "Eucalyptus & Mint",
+    burnTime: "45-55 hours",
+    size: "10oz",
+    inStock: true,
+    featured: false
+  },
+  {
+    id: 8,
+    name: "Sandalwood Serenity",
+    price: 27.99,
+    description: "Exotic sandalwood and warm amber create a meditative atmosphere perfect for mindfulness and reflection.",
+    image: "/images/images.jpeg",
+    category: "Woody",
+    scent: "Sandalwood & Amber",
+    burnTime: "50-60 hours",
+    size: "12oz",
+    inStock: true,
+    featured: true
+  },
+  {
+    id: 9,
+    name: "Pumpkin Spice",
+    price: 19.99,
+    description: "The beloved fall favorite with notes of pumpkin, cinnamon, and nutmeg that brings autumn warmth indoors.",
+    image: "/images/images.jpeg",
+    category: "Spicy",
+    scent: "Pumpkin, Cinnamon & Nutmeg",
+    burnTime: "35-45 hours",
+    size: "8oz",
+    inStock: true,
+    featured: false
+  },
+  {
+    id: 10,
+    name: "Jasmine Nights",
+    price: 26.99,
+    description: "Intoxicating jasmine and white tea create an elegant and sophisticated evening atmosphere.",
+    image: "/images/images.jpeg",
+    category: "Floral",
+    scent: "Jasmine & White Tea",
+    burnTime: "45-55 hours",
+    size: "10oz",
+    inStock: true,
+    featured: false
+  }
+];
+
+export const categories = [
+  "All",
+  "Relaxation",
+  "Fresh",
+  "Spicy",
+  "Floral",
+  "Citrus",
+  "Sweet",
+  "Woody"
+];
